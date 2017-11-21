@@ -8,7 +8,6 @@ const pool  = mysql.createPool({
     password : '',
     database : 'letao'
 });
-console.log("数据库的用户名是:root 密码是空");
 /**
  * [query description]
  * @return {[type]} [description]
