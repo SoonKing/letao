@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+/* 头部导航 */
+header {
+  padding: 5px 7px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #006699;
+}
+header h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+}
+header h2 a {
+  float: right;
+}
+footer {
+  height: 45px;
+  width: 100%;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  padding-top: 4px;
+}
+footer a {
+  color: #fff;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+footer a .mui-icon {
+  font-size: 18px;
+}
+footer a p {
+  color: inherit;
+  font-size: 12px;
+}
+footer a.active {
+  color: #ffa500;
+}
+/*# sourceMappingURL=./common.css.map */

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>搜索页</title>
+    <link rel="stylesheet" href="./asset/mui/css/mui.css">
+    <link rel="stylesheet" href="./asset/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="mui-clearfix">搜索中心
+            <a class="lt_header_rt" href="javascript:history.back()">
+                <span class="icon_back fa fa-arrow-left"></span>
+            </a>
+        </h2>
+    </header>
+
+    <div class="lt_view">
+        <!-- 搜索表单 -->
+        <div class="search_form">
+            <form action="" class="mui-clearfix">
+                <input placeholder="搜索你喜欢的商品" class="searchTxt" type="text">
+                <button type="button" class="searchBtn">搜索</button>
+            </form>
+
+        </div>
+        <!-- 清空历史 -->
+        <div class="history_bar mui-clearfix">
+            <span class="mui-pull-left">
+                    搜索历史
+                </span>
+            <a class="mui-pull-right clearBtn " href="javascript:;">
+                <span class="mui-icon mui-icon-trash "></span> 清空记录
+            </a>
+        </div>
+        <!-- 列表 -->
+        <div class="history_list"></div>
+    </div>
+
+    <footer>
+        <!-- 去掉active属性 -->
+        <a href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <p>首页</p>
+        </a>
+        <a href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <p>分类</p>
+        </a>
+        <a href="cart.html">
+            <span class="fa fa-cart-arrow-down"></span>
+            <p>购物车</p>
+        </a>
+        <a href="user/index.html">
+            <span class="mui-icon mui-icon-contact"></span>
+            <p>会员中心</p>
+        </a>
+    </footer>
+</body>
+
+</html>
+<script src="./asset/mui/js/mui.js"></script>
+<script src="./asset/zepto/zepto.min.js"></script>
+<script src="./js/common.js"></script>
+
+<script src="./js/search.js"></script>

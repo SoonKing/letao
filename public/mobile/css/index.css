@@ -1,0 +1,84 @@
+/* 整个内容部分 */
+.lt_view {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+}
+.lt_view .lt_product_nav {
+  padding: 5px 10px;
+}
+.lt_view .lt_product_nav a {
+  float: left;
+  width: 33.33%;
+  display: block;
+}
+.lt_view .lt_product_nav a img {
+  display: block;
+  width: 100%;
+}
+/* 更多图片 */
+.lt_more_pic {
+  padding: 5px 10px;
+}
+.lt_more_pic a {
+  float: left;
+  width: 67.1%;
+  display: block;
+}
+.lt_more_pic a img {
+  width: 50%;
+  float: left;
+}
+.lt_more_pic a:nth-child(2) {
+  float: right;
+  width: 32.9%;
+}
+.lt_more_pic a:nth-child(2) img {
+  width: 100%;
+}
+/* 品牌专区 */
+.lt_brand {
+  padding: 0 10px;
+}
+.lt_brand img {
+  width: 100%;
+}
+.lt_brand ul {
+  list-style: none;
+}
+.lt_brand ul li {
+  float: left;
+  width: 25%;
+}
+.lt_brand ul li a img {
+  width: 100%;
+}
+/* 产品列表 */
+.lt_product {
+  padding: 0 10px;
+}
+.lt_product img {
+  width: 100%;
+  display: block;
+}
+.lt_product .lt_product_list .product_item {
+  width: 50%;
+  float: left;
+  padding: 5px;
+  text-align: center;
+}
+.lt_product .lt_product_list .product_item .item_content {
+  border: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.lt_product .lt_product_list .product_item .item_content img {
+  width: 100%;
+}
+.lt_product .lt_product_list .product_item .item_content .pro_info {
+  padding-left: 10px;
+  text-align: left;
+}
+.lt_product .lt_product_list .product_item .item_content .pro_price .new_price {
+  color: red;
+}
+/*# sourceMappingURL=./index.css.map */
