@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>搜索页</title>
+    <link rel="stylesheet" href="./asset/mui/css/mui.css">
+    <link rel="stylesheet" href="./asset/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/category.css">
+    <!-- <link rel="stylesheet" href="./css/category.less"> -->
+
+</head>
+
+<body>
+
+    <!-- 遮罩层和旋转的加载图标 -->
+    <span class="lt_loading   mui-icon mui-icon-spinner-cycle mui-spin"></span>
+    <header>
+        <a class="lt_header_left" href="javascript:history.back()">
+            <span class="icon_back fa fa-arrow-left"></span>
+        </a>
+        <input type="text" class="search_txt">
+        <a class="lt_header_right" href="javascript:;">
+            <span class="fa fa-search"></span>
+        </a>
+    </header>
+
+    <div class="lt_view">
+        <div class="lt_menu">
+            <ul>
+
+            </ul>
+        </div>
+        <div class="lt_content">
+            <ul class="mui-clearfix">
+
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <!-- 去掉active属性 -->
+        <a href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <p>首页</p>
+        </a>
+        <a href="category.html" class="active">
+            <span class="mui-icon mui-icon-bars"></span>
+            <p>分类</p>
+        </a>
+        <a href="cart.html">
+            <span class="fa fa-cart-arrow-down"></span>
+            <p>购物车</p>
+        </a>
+        <a href="user/index.html">
+            <span class="mui-icon mui-icon-contact"></span>
+            <p>会员中心</p>
+        </a>
+    </footer>
+</body>
+
+</html>
+<script src="./asset/mui/js/mui.js"></script>
+<script src="./asset/artTemplate/template.js"></script>
+<script src="./asset/zepto/zepto.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/category.js"></script>

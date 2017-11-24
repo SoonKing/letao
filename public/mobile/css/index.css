@@ -22,7 +22,7 @@
 }
 .lt_more_pic a {
   float: left;
-  width: 67.1%;
+  width: 66.66%;
   display: block;
 }
 .lt_more_pic a img {
@@ -31,7 +31,7 @@
 }
 .lt_more_pic a:nth-child(2) {
   float: right;
-  width: 32.9%;
+  width: 33.33%;
 }
 .lt_more_pic a:nth-child(2) img {
   width: 100%;

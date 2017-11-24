@@ -1,0 +1,68 @@
+ ul,
+ ol,
+ li {
+     list-style: none;
+ }
+
+
+ header {
+     padding: 5px 40px;
+     height: 45px;
+     a {
+         top: 50%;
+         transform: translateY(-50%);
+         position: absolute;
+         display: block;
+         color: #fff;
+     }
+     .lt_header_left {
+         left: 10px;
+     }
+     .lt_header_right {
+         right: 10px;
+     }
+     .search_txt {
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         height: 100%;
+         text-indent: 1em;
+     }
+ }
+ /* 分类部分 */
+
+ .lt_view {
+     position: relative;
+     padding-left: 80px;
+     .lt_menu {
+         width: 80px;
+         background-color: #fff;
+         position: absolute;
+         left: 0;
+         top: 0;
+         ul {
+             li {
+                 a {
+                     display: block;
+                     color: hotpink;
+                     height: 40px;
+                     line-height: 40px;
+                     text-align: center;
+                 }
+             }
+         }
+     }
+     .lt_content {
+         ul {
+             li {
+                 float: left;
+                 width: 33.33%;
+                 a {
+                     img {
+                         width: 100%;
+                     }
+                 }
+             }
+         }
+     }
+ }

@@ -1,0 +1,95 @@
+    header {
+        z-index: 2;
+        h2 {
+            a {
+                float: left;
+            }
+        }
+    }
+
+    .lt_view {
+        position: relative;
+        height: 100%;
+        background-color: #fff;
+        .search_box {
+            background-color: #fff;
+            >div {
+                height: 50px;
+                padding: 10px;
+                width: 100%;
+                .searchTxt {
+                    font-size: 14px;
+                    text-indent: 1em;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border: 1px solid #006699;
+                    border-right: none;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    width: 80%;
+                    float: left;
+                }
+                .searchBtn {
+                    width: 20%;
+                    float: left;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    padding: 0;
+                    margin: 0;
+                    height: 100%;
+                    border: 0;
+                    background-color: #006699;
+                    color: #fff;
+                }
+            }
+        }
+        /* 商品数据 */
+        .lt_sort_bar {
+            background-color: #fff;
+            color: #666;
+            font-size: 12px;
+            padding: 10px 0;
+            >a {
+                background-color: #efeff4;
+                float: left;
+                width: 25%;
+                text-align: center;
+                color: inherit;
+                padding: 5px 0;
+                .mui-icon {
+                    font-size: 12px;
+                }
+            }
+            .active {
+                color: orange;
+            }
+        }
+        /* 产品列表 */
+        .lt_product_list {
+            .product_item {
+                width: 50%;
+                float: left;
+                padding: 5px;
+                text-align: center;
+                .item_content {
+                    border: 1px solid #ccc;
+                    padding-bottom: 10px;
+                    img {
+                        width: 100%;
+                    }
+                    .pro_info {
+                        height: 40px;
+                        overflow: hidden;
+                        padding-left: 10px;
+                        text-align: left;
+                    }
+                    .pro_price {
+                        .new_price {
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }

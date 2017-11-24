@@ -1,0 +1,89 @@
+header {
+  z-index: 2;
+}
+header h2 a {
+  float: left;
+}
+.lt_view {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  /* 商品数据 */
+  /* 产品列表 */
+}
+.lt_view .search_box {
+  background-color: #fff;
+}
+.lt_view .search_box > div {
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+}
+.lt_view .search_box > div .searchTxt {
+  font-size: 14px;
+  text-indent: 1em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #006699;
+  border-right: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  float: left;
+}
+.lt_view .search_box > div .searchBtn {
+  width: 20%;
+  float: left;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  border: 0;
+  background-color: #006699;
+  color: #fff;
+}
+.lt_view .lt_sort_bar {
+  background-color: #fff;
+  color: #666;
+  font-size: 12px;
+  padding: 10px 0;
+}
+.lt_view .lt_sort_bar > a {
+  background-color: #efeff4;
+  float: left;
+  width: 25%;
+  text-align: center;
+  color: inherit;
+  padding: 5px 0;
+}
+.lt_view .lt_sort_bar > a .mui-icon {
+  font-size: 12px;
+}
+.lt_view .lt_sort_bar .active {
+  color: orange;
+}
+.lt_view .lt_product_list .product_item {
+  width: 50%;
+  float: left;
+  padding: 5px;
+  text-align: center;
+}
+.lt_view .lt_product_list .product_item .item_content {
+  border: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.lt_view .lt_product_list .product_item .item_content img {
+  width: 100%;
+}
+.lt_view .lt_product_list .product_item .item_content .pro_info {
+  height: 40px;
+  overflow: hidden;
+  padding-left: 10px;
+  text-align: left;
+}
+.lt_view .lt_product_list .product_item .item_content .pro_price .new_price {
+  color: red;
+}
+/*# sourceMappingURL=./searchList.css.map */

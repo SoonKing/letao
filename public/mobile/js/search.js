@@ -62,7 +62,8 @@ $(function() {
         ls.setItem("LT_his", JSON.stringify(arr));
 
 
-        loadHistory();
+        // 跳转页面
+        location.href = "searchList.html?key=" + val;
 
     })
 
@@ -82,6 +83,7 @@ $(function() {
 
         var ls = localStorage;
         var arr = (ls.getItem("LT_his") && JSON.parse(ls.getItem("LT_his"))) || [];
+
         // 删除数组中的元素
         arr.splice(index, 1);
 

@@ -52,11 +52,42 @@
              font-size: 18px;
          }
          p {
-           color:inherit;
+             color: inherit;
              font-size: 12px;
          }
      }
      a.active {
-         color: #ffa500;
+         color: orange;
+     }
+ }
+
+
+
+
+
+
+
+
+ /* 遮罩层的样式 */
+
+ .lt_loading {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     display: none;
+     transform: translate(-50%, -50%);
+     z-index: 100;
+     animation-name: ani_lt_load;
+     animation-timing-function: linear;
+     animation-duration: 8s;
+ }
+ /* 使用css3的动画 */
+
+ @keyframes ani_lt_load {
+     0% {
+         transform: translate(-50%, -50%) rotate(0deg);
+     }
+     100% {
+         transform: translate(-50%, -50%) rotate(360deg);
      }
  }
