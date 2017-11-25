@@ -31,7 +31,9 @@ $(function() {
 
                         /* 在这个时候发送ajax请求 */
                         queryObj.page = 1;
+
                         queryProduct(function(result) {
+                            // console.log(result);
                             Count = result.count;
                             var html = template("prolistTpl", result);
                             $(".lt_product_list").html(html);
@@ -63,10 +65,12 @@ $(function() {
                             //继续请求数据
                             queryObj.page++;
                             queryProduct(function(result) {
+
                                 var html = template("prolistTpl", result);
                                 /* 此时是将获取到的数据追加到模板中 */
                                 $(".lt_product_list").append(html);
                                 //有数据传入的时候下拉的时候传入false  
+
                                 mui('#refreshContainer').pullRefresh().endPullupToRefresh(false);
                             })
                         } else {

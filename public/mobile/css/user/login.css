@@ -1,0 +1,28 @@
+header .lt_header_left {
+  float: left;
+}
+/* 输入框的样式 */
+.lt_view {
+  height: 100%;
+  background-color: #fff;
+}
+.lt_view .lt_form {
+  padding: 10px;
+}
+.lt_view .lt_form .mui-input-group:after {
+  display: none;
+}
+.lt_view .lt_form .mui-input-group .mui-input-row {
+  margin: 10px 0;
+}
+.lt_view .lt_form .mui-input-group .mui-input-row input {
+  border: 1px solid #ccc;
+}
+.lt_view .lt_form .mui-input-group .mui-button-row button {
+  background-color: #006699;
+  width: 100%;
+}
+.lt_view .lt_form .mui-input-group a {
+  color: #006699;
+}
+/*# sourceMappingURL=./login.css.map */

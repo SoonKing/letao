@@ -1,0 +1,95 @@
+/* 头部 */
+header {
+  z-index: 55;
+  padding: 5px 40px;
+  height: 45px;
+}
+header h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+}
+header h2 a {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  display: block;
+  color: #fff;
+}
+header .lt_header_left {
+  left: 10px;
+}
+header .lt_header_right {
+  right: 10px;
+}
+/*  内容介绍*/
+.lt_view {
+  position: relative;
+  height: 100%;
+}
+.lt_view ul .pro_item {
+  padding: 15px 5px;
+  border-bottom: 1px solid #ccc;
+}
+.lt_view ul .pro_price {
+  font-size: 14px;
+}
+.lt_view ul .pro_price .p_newPrice {
+  color: red;
+  font-size: 20px;
+  font-weight: 800;
+}
+.lt_view ul .pro_price .p_oldPrice {
+  font-size: 12px;
+  color: #888;
+}
+.lt_view ul .pro_size span {
+  font-size: 14px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 0 5px 5px;
+  border: 1px solid #000;
+}
+.lt_view ul .pro_size .active {
+  background-color: orange;
+  color: #fff;
+  border: 1px solid orange;
+}
+.lt_view ul .pro_num {
+  font-size: 14px;
+}
+.lt_view ul .pro_num .mui-numbox {
+  width: 90px;
+  padding-left: 30px;
+}
+.lt_view ul .pro_num .mui-numbox .mui-btn {
+  width: 30px;
+}
+.lt_view ul .pro_num .mui-numbox .mui-numbox-input {
+  width: 28px !important;
+}
+/* 页足部分 */
+footer {
+  padding-top: 7px;
+  z-index: 5;
+  padding-left: 60px;
+  color: #fff;
+}
+footer .lt_cart {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 60px;
+  text-align: center;
+}
+footer .cart_tool {
+  width: 100%;
+}
+footer .cart_tool button {
+  width: 48%;
+}
+/*# sourceMappingURL=./product.css.map */

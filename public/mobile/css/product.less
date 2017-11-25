@@ -1,0 +1,106 @@
+/* 头部 */
+
+header {
+    z-index: 55;
+    padding: 5px 40px;
+    height: 45px;
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+        a {
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            display: block;
+            color: #fff;
+        }
+    }
+    .lt_header_left {
+        left: 10px;
+    }
+    .lt_header_right {
+        right: 10px;
+    }
+}
+
+
+/*  内容介绍*/
+
+.lt_view {
+    position: relative;
+    height: 100%;
+    ul {
+        .pro_item {
+            padding: 15px 5px;
+            border-bottom: 1px solid #ccc;
+        }
+        .pro_info {}
+        .pro_price {
+            font-size: 14px;
+            .p_newPrice {
+                color: red;
+                font-size: 20px;
+                font-weight: 800;
+            }
+            .p_oldPrice {
+                font-size: 12px;
+                color: #888;
+            }
+        }
+        .pro_size {
+            span {
+                font-size: 14px;
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                line-height: 25px;
+                margin: 0 0 5px 5px;
+                border: 1px solid #000;
+            }
+            .active {
+                background-color: orange;
+                color: #fff;
+                border: 1px solid orange;
+            }
+        }
+        .pro_num {
+            font-size: 14px;
+            .mui-numbox {
+                width: 90px;
+                padding-left: 30px;
+                .mui-btn {
+                    width: 30px;
+                }
+                .mui-numbox-input {
+                    width: 28px !important;
+                }
+            }
+        }
+    }
+}
+
+
+/* 页足部分 */
+
+footer {
+    padding-top: 7px;
+    z-index: 5;
+    padding-left: 60px;
+    color: #fff;
+    .lt_cart {
+        position: absolute;
+        left: 0;
+        top: 15px;
+        width: 60px;
+        text-align: center;
+    }
+    .cart_tool {
+        width: 100%;
+        button {
+            width: 48%;
+        }
+    }
+}

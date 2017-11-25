@@ -1,0 +1,25 @@
+header {
+  padding: 5px 40px;
+  height: 45px;
+}
+header a {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  display: block;
+  color: #fff;
+}
+header .lt_header_left {
+  left: 10px;
+}
+header .lt_header_right {
+  right: 10px;
+}
+header .search_txt {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-indent: 1em;
+}
+/*# sourceMappingURL=./cart.css.map */
