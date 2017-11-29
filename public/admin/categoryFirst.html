@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一级分类管理</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/categoryFirst.css">
+    <!-- <link rel="stylesheet" href="../css/categoryFirst.less"> -->
+</head>
+
+<body>
+    <div class="lt_view">
+        <aside class="lt_aside">
+            <div class="logo">ITCAST</div>
+            <!-- 黑色的内容 用户和菜单  -->
+            <div class="aside_menu">
+                <div class="user">
+                    <img src="./images/default.png" alt="">
+                    <span>超级管理员</span>
+                </div>
+                <div class="menu_list">
+                    <ul>
+                        <li>
+                            <a href="javascript:;"> <span class="glyphicon glyphicon-user"></span> 用户管理</a>
+                        </li>
+                        <li class="category_menu">
+                            <a href="javascript:;"> <span class="glyphicon glyphicon-list"></span> 分类管理</a>
+                            <div class="sub_menu">
+                                <a href="categoryFirst.html">一级分类</a>
+                                <a href="categorySecond.html">二级分类</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"> <span class="glyphicon glyphicon-tags"></span> 商品管理 </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+        <div class="lt_content">
+            <div class="lt_top_nav">
+                <a class="slide_menu pull-left" href="javascript:;">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </a>
+                <a class="log_out pull-right" data-toggle="modal" data-target="#myModal" href="javascript:;">
+                    <span class="glyphicon glyphicon-log-out"> </span>
+                </a>
+            </div>
+            <!-- 主要内容 -->
+            <div class="main_content">
+                <!-- 路径导航 -->
+                <ol class="breadcrumb">
+                    <li><a href="#">管理系统</a></li>
+                    <li><a href="#">分类管理</a></li>
+                    <li class="active">一级分类</li>
+                </ol>
+
+                <!-- 图形展示 -->
+                <div class="section_content ">
+                    <button class="btn btn-default show_add_modal " data-toggle="modal" data-target="#myModalAdd">添加分类</button>
+                    <table class="table table-bordered  cateTbl ">
+                    </table>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination"></ul>
+                    </nav>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登出的对话框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+                </div>
+                <div class="modal-body text-danger ">
+                    <span class="glyphicon glyphicon-info-sign"></span> 您确定要退出后台管理系统吗?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary log_out_ok ">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 添加的时候弹出的遮罩层 -->
+    <div class="modal fade" id="myModalAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+                </div>
+                <div class="modal-body ">
+                    <input type="text" class="form-control categoryName " name="categoryName" placeholder="请添加一级分类名称 ">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary add_ok ">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script type="text/html" id="mainTbl">
+    <thead>
+        <th>序号</th>
+        <th>名称</th>
+    </thead>
+    {{each rows as value i}}
+    <tr>
+        <!-- {i+1}
+      0 1 2 3 4 5 6 7 8 9 
+      (page-1)*size+(i+1)
+      5+1=6 
+     -->
+        <td>{{(page-1)*size+(i+1)}}</td>
+        <td>{{value.categoryName}}</td>
+    </tr>
+    {{/each}}
+</script>
+<script src="./assets/jquery/jquery.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.js"></script>
+<script src="./assets/echarts/echarts.min.js"></script>
+<script src="./assets/bootstrap-paginator/bootstrap-paginator.js"></script>
+<script src="./assets/artTemplate/template.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/categoryFirst.js"></script>

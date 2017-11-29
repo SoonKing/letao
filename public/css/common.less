@@ -1,0 +1,91 @@
+ html,
+ body {
+     height: 100%;
+ }
+
+ .lt_view {
+     height: 100%;
+     position: relative;
+     padding-left: 180px;
+ }
+
+ .p0 {
+     padding-left: 0;
+ }
+
+ .p0 .lt_aside {
+     display: none;
+ }
+
+ .lt_aside {
+     height: 100%;
+     width: 180px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     background-color: #222d32;
+     .logo {
+         background-color: #367fa9;
+         color: #fff;
+         height: 50px;
+         line-height: 50px;
+         font-size: 20px;
+         font-weight: 700;
+         text-align: center;
+     }
+     .aside_menu {
+         .user {
+             padding: 30px 0;
+             text-align: center;
+             color: #fff;
+             img {
+                 width: 50px;
+                 border-radius: 50%;
+             }
+         }
+         .menu_list {
+             ul {
+                 padding: 0;
+                 margin: 0;
+                 li {
+                     a {
+                         padding: 10px 0;
+                         display: block;
+                         color: #aaaaaa;
+                         text-decoration: none;
+                         text-align: center;
+                     }
+                     .sub_menu {
+                         padding-left: 20px;
+                         display: none;
+                     }
+                 }
+                 .active {
+                     background-color: #000;
+                     border-left: 5px solid #3c8dbc;
+                 }
+             }
+         }
+     }
+ }
+
+ .lt_content {
+     height: 100%;
+     .lt_top_nav {
+         height: 50px;
+         background-color: #3c8dbc;
+         padding: 12px;
+         a {
+             font-size: 20px;
+             color: #fff;
+         }
+     }
+ }
+
+ #myModal .modal-dialog {
+     width: 300px;
+ }
+
+ .main_content {
+     padding: 10px;
+ }

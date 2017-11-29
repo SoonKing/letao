@@ -1,0 +1,16 @@
+body {
+  background-color: #222d32;
+  position: relative;
+}
+body .lt_view {
+  width: 350px;
+  position: absolute;
+  top: 100px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .lt_view .lt_panel .panel-heading {
+  font-size: 20px;
+}
+/*# sourceMappingURL=./login.css.map */

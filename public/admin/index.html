@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>登录的页面</title>
+
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/index.less"> -->
+</head>
+
+<body>
+    <div class="lt_view">
+        <aside class="lt_aside">
+            <div class="logo">ITCAST</div>
+            <!-- 黑色的内容 用户和菜单  -->
+            <div class="aside_menu">
+                <div class="user">
+                    <img src="./images/default.png" alt="">
+                    <span>超级管理员</span>
+                </div>
+                <div class="menu_list">
+                    <ul>
+                        <li>
+                            <a href="javascript:;"> <span class="glyphicon glyphicon-user"></span> 用户管理</a>
+                        </li>
+                        <li class="category_menu">
+                            <a href="javascript:;"> <span class="glyphicon glyphicon-list"></span> 分类管理</a>
+                            <div class="sub_menu">
+                                <a href="categoryFirst.html">一级分类</a>
+                                <a href="categorySecond.html">二级分类</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"> <span class="glyphicon glyphicon-tags"></span> 商品管理 </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+        <div class="lt_content">
+            <div class="lt_top_nav">
+                <a class="slide_menu pull-left" href="javascript:;">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </a>
+                <a class="log_out pull-right" data-toggle="modal" data-target="#myModal" href="javascript:;">
+                    <span class="glyphicon glyphicon-log-out"> </span>
+                </a>
+            </div>
+            <!-- 内容 -->
+            <div class="main_content">
+                <!-- 路径导航   通过bootstrap去找到组件 -->
+                <ol class="breadcrumb">
+                    <li><a href="#">管理系统</a></li>
+                    <li class="active">首页</li>
+                </ol>
+                <!-- 图形展示  两个通过echarts添加图表-->
+                <div class="section_content clearfix ">
+                    <div id="mainLeft" class="pull-left" style="width: 600px;height:400px;"></div>
+                    <!-- 注意更改id名,js也要更改,图表的is名字一样会冲突 -->
+                    <div id="mainRight" class="pull-right" style="width: 600px;height:400px;"></div>
+                </div>
+            </div>
+            <div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+                            </div>
+                            <div class="modal-body text-danger ">
+                                <span class="glyphicon glyphicon-info-sign"></span> 您确定要退出后台管理系统吗?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary log_out_ok ">确认</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./assets/jquery/jquery.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.js"></script>
+<script src="./assets/echarts/echarts.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>

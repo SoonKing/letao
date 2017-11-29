@@ -1,0 +1,35 @@
+header .lt_header_left {
+  float: left;
+}
+.lt_view {
+  height: 100%;
+  background-color: #fff;
+  /* 注册界面的样式 */
+}
+.lt_view .lt_form {
+  padding: 10px;
+}
+.lt_view .lt_form .mui-input-group:after {
+  display: none;
+}
+.lt_view .lt_form .mui-input-group .mui-input-row {
+  border: none;
+  margin: 10px 0;
+}
+.lt_view .lt_form .mui-input-group .mui-input-row:after {
+  display: none;
+}
+.lt_view .lt_form .mui-input-group .mui-input-row input {
+  border: 1px solid #ccc;
+}
+.lt_view .lt_form .mui-input-group .mui-input-row .vCode {
+  width: 60%;
+}
+.lt_view .lt_form .mui-input-group .mui-input-row .getCodeBtn {
+  width: 30%;
+  height: 100%;
+}
+.lt_view .lt_form .mui-input-group .mui-button-row .registerBtn {
+  width: 100%;
+}
+/*# sourceMappingURL=./register.css.map */

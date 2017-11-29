@@ -1,0 +1,41 @@
+ header {
+     .lt_header_left {
+         float: left;
+     }
+ }
+
+ .lt_view {
+     height: 100%;
+     background-color: #fff;
+     /* 注册界面的样式 */
+     .lt_form {
+         padding: 10px;
+         .mui-input-group {
+             &:after {
+                 display: none;
+             }
+             .mui-input-row {
+                 border: none;
+                 margin: 10px 0;
+                 &:after {
+                     display: none;
+                 }
+                 input {
+                     border: 1px solid #ccc;
+                 }
+                 .vCode {
+                     width: 60%;
+                 }
+                 .getCodeBtn {
+                     width: 30%;
+                     height: 100%;
+                 }
+             }
+             .mui-button-row {
+                 .registerBtn {
+                     width: 100%;
+                 }
+             }
+         }
+     }
+ }

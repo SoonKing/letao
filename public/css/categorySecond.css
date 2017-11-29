@@ -1,0 +1,25 @@
+.cateTbl {
+  margin-top: 10px;
+}
+.cateTbl img {
+  width: 165px;
+  height: 85px;
+}
+#myModalAdd .modal-dialog {
+  width: 300px;
+}
+#addForm img {
+  width: 100px;
+}
+#addForm .fileupload_div {
+  position: relative;
+}
+#addForm .fileupload_div .fileupload {
+  position: absolute;
+  width: 82px;
+  height: 34px;
+  opacity: 0;
+  top: 0px;
+  left: 15px;
+}
+/*# sourceMappingURL=./categorySecond.css.map */
